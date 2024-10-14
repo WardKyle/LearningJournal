@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* ---------- */
+/* topography */
+/* ---------- */
+
+
+/* ------------------------- */
+/* DRY code - alpha by style */
+/* ------------------------- */
+
+#header {
+    display: flex;
+}
+
+
+/* ------------ */
+/* divs - alpha */
+/* ------------ */
+#header {
+    height: 59px;
+    justify-content:space-between;
+    align-items: center;
+    background-color: hotpink;
+    padding: 0 30px 0 30px;
+    font-size: 0.9375rem;
+    & #header-title {
+        font-weight: bold;
+    }
+}
+#navbar ul {
+    text-transform: uppercase;
+    list-style-type: none;
+    & li {
+        display: inline;
+        margin-left: 15px;
+    }
+}
