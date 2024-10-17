@@ -35,6 +35,7 @@ body {
         margin-left: 20px;
         & #pencil {
             height: 20px;
+            margin-right: 3px;
         }
     }
 }
