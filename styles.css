@@ -15,10 +15,16 @@ body {
 /* DRY code - alpha by style */
 /* ------------------------- */
 
-#header {
+#header
+,#container
+,#hero-post {
     display: flex;
 }
 
+#container
+,#hero-post {
+    flex-direction: column;
+}
 
 /* ------------ */
 /* divs - alpha */
@@ -32,7 +38,6 @@ body {
     font-size: 0.9375rem;
     & #header-title {
         font-weight: bold;
-        margin-left: 20px;
         & #pencil {
             height: 20px;
             margin-right: 3px;
@@ -45,5 +50,19 @@ body {
     & li {
         display: inline;
         margin-left: 15px;
+    }
+}
+
+#hero-post {
+    height: 300px;    
+    background-image: url("/images/1.jpg");
+    background-size: cover;
+    justify-content:flex-end;
+    color:white;
+    gap: 10px;
+    padding: 25px;
+    & p {
+        font-size: 0.875rem;
+        font-weight: 100;
     }
 }
