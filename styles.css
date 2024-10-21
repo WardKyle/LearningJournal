@@ -16,19 +16,51 @@ body {
 /* ------------------------- */
 
 #header
-,#container
-,#hero-post {
+,#blog-container
+,#hero-post
+,.blogs {
     display: flex;
 }
 
-#container
-,#hero-post {
+#blog-container
+,#hero-post
+,.blogs {
     flex-direction: column;
 }
-
+#hero-post p,
+.blog-date,
+.blog-description {
+    font-size: 0.875rem;
+}
+#hero-date,
+.blog-date {
+    text-transform: uppercase;
+}
 /* ------------ */
 /* divs - alpha */
 /* ------------ */
+
+.blogs {
+    margin: 20px 0;
+}
+#blog-container {
+    margin:20px;
+    justify-content: center;
+    align-items: center;
+}
+.blog-date {
+    margin: 2px 0;
+}
+.blog-title {
+    margin: 3px 0;
+}
+.blog-img {
+    height: 232px;
+    object-fit: cover;
+}
+.blog-description {
+
+}
 #header {
     height: 59px;
     justify-content:space-between;
@@ -62,7 +94,6 @@ body {
     gap: 10px;
     padding: 25px;
     & p {
-        font-size: 0.875rem;
         font-weight: 100;
     }
 }
