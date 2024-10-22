@@ -28,6 +28,12 @@ const blogs = [
         description: `I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.`,
         image:'blog5.jpg',
         title:"Blog five"
+    },
+    {
+        date:'July 23, 2023',
+        description: `I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.`,
+        image:'blog6.png',
+        title:"Blog six"
     }
 ]
 
