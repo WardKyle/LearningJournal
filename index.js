@@ -7,17 +7,19 @@ const heroPost = document.getElementById("hero-post");
 const aboutMe = document.getElementById("about-me");
 
 nav_aboutMe.addEventListener("click",(e)=>{
-    let blogContainer = document.getElementById("blog-container").innerHTML;
     aboutMe.style.display = "flex";
     heroPost.style.display = "none";
     insert_heroPost.innerHTML = select_heroPost.innerHTML;
-    blogContainer  = `<h4>Recent posts</h4>` + blogContainer;
-    render(blogContainer);
 });
 
 nav_home.addEventListener("click",(e)=>{
     aboutMe.style.display = "none";
     heroPost.style.display = "flex";
+    const blogs = document.getElementsByClassName("blogs");
+    for(let i=3;i<blogs.length;i++){
+        blogs[i].style.display = "none";
+    }
+    viewMore.style.display = "inherit";
 });
 
 let htmlText = ``;
