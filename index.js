@@ -13,13 +13,17 @@ nav_aboutMe.addEventListener("click",(e)=>{
 });
 
 nav_home.addEventListener("click",(e)=>{
+    const blogs = document.getElementsByClassName("blogs");
+    const screenWidth = screen.width
     aboutMe.style.display = "none";
     heroPost.style.display = "flex";
-    const blogs = document.getElementsByClassName("blogs");
-    for(let i=3;i<blogs.length;i++){
-        blogs[i].style.display = "none";
+    // @media min width
+    if(screenWidth < 1000){   
+        for(let i=3;i<blogs.length;i++){
+            blogs[i].style.display = "none";
+        }
+        viewMore.style.display = "inherit";
     }
-    viewMore.style.display = "inherit";
 });
 
 let htmlText = ``;

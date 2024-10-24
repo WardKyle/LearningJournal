@@ -117,7 +117,7 @@ body {
 
 /* Media queries */
 @media (min-width:1000px){
-    #blog-container{
+    #blog-container {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         row-gap: 20px;
